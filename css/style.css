@@ -7,6 +7,7 @@
     --font-search: #9B9B9B;
     --width-img: 176px;
     --height-img: 174px;
+    --warning-color: #FF0000;
 }
 
 * {
@@ -43,7 +44,7 @@
 }
 
 .header__logo {
-    padding: 0 5px 0 0;
+    padding: 0 15px 0 0;
 }
 
 .search__display {
@@ -372,7 +373,6 @@
     transition: all 0.25s;
 }
 
-
 .rodapie {
     width: 100%;
     height: 50px;
@@ -409,4 +409,83 @@
 .btn__agregar--a:visited {
     font-size: 1rem;
     color: var(--bg-general);
+}
+
+/* ---------------DESKTOP LOGIN Y AGREGAR PRODUCTOS---------------*/
+.main-heigth {
+    height: 50vh;
+
+}
+
+.form__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+
+}
+
+.form__login {
+    margin: 1rem;
+}
+
+.agregar__producto {
+    margin-left: -3.6rem;
+}
+
+
+.form__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input {
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+}
+
+.input-container--invalid .input-label {
+    color: var(--warning-color);
+}
+
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.btn__form {
+    width: 75%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    color: var(--bg-general);
+    font-size: 1rem;
+    outline: none;
+    margin-top: 1rem;
 }
