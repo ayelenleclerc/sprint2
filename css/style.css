@@ -268,6 +268,19 @@
     height: 350px;
 }
 
+.footer__tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}
+
 .logo__footer,
 .footer__menu {
     display: flex;
@@ -427,6 +440,10 @@
 .main-heigth {
     height: 50vh;
 
+}
+
+.btn__admin {
+    width: 180px
 }
 
 .form__title {
@@ -624,6 +641,16 @@
         height: 500px;
     }
 
+    .footer__tablet {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
     .logo__footer,
     .footer__menu {
         display: flex;
@@ -727,6 +754,263 @@
         width: 50%;
         margin: 0.5rem;
         font-size: 1rem;
+    }
+
+    .agregar__producto {
+        margin: 0 auto;
+    }
+
+
+    .form__container {
+        width: 100%;
+        margin: 0 0.5rem;
+    }
+
+    .btn__form {
+        width: 175px;
+        height: 40px;
+        border: none;
+
+        font-size: 1rem;
+
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1200px) {
+    /* ---------------TABLET A DESKTOP INDEX---------------*/
+
+    /* HEADER */
+    .header__top {
+        padding: 2rem 2rem;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .header__logo {
+        width: 10.25rem;
+    }
+
+
+    .btn__login {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .search__mobile {
+        display: none;
+
+    }
+
+    /* BANNER */
+    .banner {
+        height: 192px;
+    }
+
+    .banner__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0.5rem;
+    }
+
+    .banner__paragraph {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 0.5rem;
+    }
+
+    .btn__banner {
+        margin: 0.5rem;
+    }
+
+    .btn__banner a {
+        font-size: 1rem;
+    }
+
+    .btn__banner a:visited {
+        font-size: 1rem;
+    }
+
+    /* PRODUCTOS-INDEX */
+
+    .section {
+        padding-top: 3rem;
+    }
+
+    .section__bottom {
+        padding-bottom: 3rem;
+    }
+
+    .section__header {
+        margin: 0 0 2rem 1rem;
+    }
+
+    .section__title {
+        font-size: 1.3rem;
+    }
+
+    .section__a {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0 1rem;
+    }
+
+    .card__container {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .card__img {
+        width: 150px;
+    }
+
+    .card__item--tablet {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        display: flex;
+        width: 100%;
+        min-height: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    .footer__top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .footer__tablet {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .logo__footer,
+    .footer__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: min-content
+    }
+
+    .logo__footer-img {
+        padding-top: 0;
+        margin: 0.5rem auto;
+        height: 50px;
+    }
+
+    .footer__menu-ul {
+        margin: 0.5rem;
+        height: 250px;
+    }
+
+    .footer__menu-li {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 2.5;
+    }
+
+    .footer__menu-a {
+        margin: 0 1rem;
+    }
+
+    .footer__social {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .contacto__title {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    .rodapie {
+        width: 100%;
+        height: 80px;
+    }
+
+    .rodapie__p a {
+        font-size: 16px;
+    }
+
+
+    /* ---------------TABLET PRODUCTOS---------------*/
+    .section__header--mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .btn__agregar {
+        width: 150px;
+        height: 40px;
+        border: none;
+    }
+
+    .btn__agregar--a {
+        font-size: 1rem;
+
+    }
+
+    .btn__agregar--a:visited {
+        font-size: 1rem;
+        color: var(--bg-general);
+    }
+
+    /* ---------------TABLET LOGIN Y AGREGAR PRODUCTOS---------------*/
+    .main-heigth {
+        height: 50vh;
+
+    }
+
+    .form__title {
+        display: flex;
+        font-size: 1.3rem;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .form__login {
+        width: 50%;
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .btn__admin {
+        width: 200px
     }
 
     .agregar__producto {
